@@ -1,1 +1,3 @@
 # Digits_Classifier
+### The Problem
+The goal of this project is to build a machine learning model capable of automatically identifying handwritten digits (0–9). While humans can easily read numbers written in different styles, computers perceive images only as grids of pixel intensities. The challenge lies in creating an algorithm robust enough to handle the high variance in human handwriting—such as different slants, thicknesses, and shapes—while maintaining high classification accuracy. Solving this problem is a foundational step in computer vision, with real-world applications ranging from bank check processing to automated postal mail sorting
