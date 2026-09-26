@@ -1,0 +1,10 @@
+# CPU-only PyTorch: much smaller than the default CUDA build, and the
+# Streamlit Community Cloud servers have no GPU anyway.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+
+streamlit>=1.53
+streamlit-drawable-canvas>=0.13
+numpy
+pillow
+scipy
