@@ -99,10 +99,7 @@ streamlit run app.py
  
 ## Keep-alive
 
-Streamlit Community Cloud puts free apps to sleep after ~12 hours without visitors. The workflow `.github/workflows/keep-alive.yml` runs every 6 hours, opens the app in a headless Chromium (via Playwright), clicks "Yes, get this app back up!" if the app is asleep, and otherwise stays on the page for ~18 s. Each run logs `AWAKE`, `WOKEN` or `FAILED` per app; a failure turns the run red and uploads a screenshot as an artifact. The script is `.github/scripts/wake_app.py`, and Playwright is installed only inside the workflow, not in the app's requirements.
-
-- **Change the URL:** edit the repository variable `STREAMLIT_APP_URL` (Settings → Secrets and variables → Actions → Variables, or `gh variable set STREAMLIT_APP_URL --body "https://your-app.streamlit.app/"`). Use a comma-separated list for several apps.
-- **Run it manually:** Actions tab → "Keep Streamlit app awake" → Run workflow, or `gh workflow run keep-alive.yml`.
+Streamlit Community Cloud puts free apps to sleep after ~12 hours without visitors. The workflow `.github/workflows/keep-alive.yml` runs every 6 hours, opens the app in a headless Chromium (via Playwright), clicks "Yes, get this app back up!" if the app is asleep, and otherwise stays on the page for ~18 s.
 
 ## Tech stack
  
